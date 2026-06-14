@@ -17,7 +17,7 @@ public class Main {
         int opcao;
         do {
             exibirMenu();
-            opcao = lerInteiro("Escolha uma opção: ");
+            opcao = lerInteiro("   Digite o número da sua opção: ");
             
             try {
                 switch (opcao) {
@@ -41,20 +41,22 @@ public class Main {
         scanner.close();
     }
     
-    private static void exibirMenu() {
-        System.out.println("\n=== SISTEMA DE BIBLIOTECA ===");
-        System.out.println("1. Cadastrar Item (Livro/Revista)");
-        System.out.println("2. Cadastrar Usuário");
-        System.out.println("3. Listar Todos os Itens");
-        System.out.println("4. Buscar Item por Código");
-        System.out.println("5. Emprestar Item");
-        System.out.println("6. Devolver Item");
-        System.out.println("7. Mostrar Itens Disponíveis");
-        System.out.println("8. Mostrar Itens Emprestados");
-        System.out.println("9. Sair");
-        System.out.print("Opção: ");
-    }
-    
+      private static void exibirMenu() { 
+    System.out.println("\n╔═════════════════════════════════════╗");
+ System.out.println("║       SISTEMA DE BIBLIOTECA         ║");
+ System.out.println("╠═════════════════════════════════════╣");
+ System.out.println("║  1. Cadastrar Item (Livro/Revista)  ║");
+ System.out.println("║  2. Cadastrar Usuário               ║");
+ System.out.println("║  3. Listar Todos os Itens           ║");
+ System.out.println("║  4. Buscar Item por Código          ║");
+ System.out.println("║  5. Emprestar Item                  ║");
+ System.out.println("║  6. Devolver Item                   ║");
+ System.out.println("║  7. Mostrar Itens Disponíveis       ║");
+ System.out.println("║  8. Mostrar Itens Emprestados       ║");
+ System.out.println("║  9. Sair                            ║");
+ System.out.println("╚═════════════════════════════════════╝");
+ 
+      }  
     private static void cadastrarItem() {
         System.out.println("\n--- Cadastro de Item ---");
         System.out.println("1. Livro");
